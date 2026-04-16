@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior:smooth ;
+    font-family: 'Quicksand', sans-serif;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+/* utility classes*/
+.primary-text{
+    color: #e4b95b;
+}
+.btn{
+    display: inline-block;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 15px;
+}
+.btn-primary{
+    color: #fff;
+    border: 1px solid #fff;
+    cursor: pointer;
+}
+.btn-primary:hover{
+    background-color:#e4b95b ;
+}
+/* header start */
+header{
+    height: 100vh;
+    position: relative;
+    background:  url(images/home_bg.jpeg) center center/cover no-repeat;
+}
+#navbar img{
+    width: 80px;
+    margin-left: 100px;
+}
+#navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+#navbar ul{
+    display: flex;
+    margin-right: 100px;
+}
+#navbar ul li a{
+    padding: 15px 20px;
+    color: white;
+    font-weight: 600; 
+    cursor: pointer;
+}
+#navbar ul li a:hover{
+    border-bottom: 2px solid #e4b95b;
+}
+header .content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 75%;
+}
+header .content h1{
+    font-weight: 700;
+    font-size: 40px;
+    color: white;
+}
+header .content p{
+    margin: 20px 0 40px;
+    color: white;
+} 
+
+header::before{
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgb(0, 0, 0,0.6);
+}
+header *{
+    z-index: 10;
+}
+/*header end */
+
+/* About Section Start */
+#About{
+    display: flex;
+    height: 80vh;
+    align-items: center;
+    justify-content: center;
+    background-color: #f4f4f4;
+}
+.container{
+    max-width: 1100px;
+    margin: auto;
+    margin-top: 70px;
+}
+#About .title{
+    text-align: center;
+    margin-bottom:4rem ;
+}
+#About h2{
+    font-size: 40px;
+    color: #383848;
+    margin-bottom: 20px;
+}
+#About .title p{
+    font-size: 14px;
+    color: #9a9a9a;
+    font-weight: 600;
+}
+#About .about-content{
+    display: flex;
+    justify-content: space-between;
+}
+#About img{
+    width: 450px
+}
+#About .about-content p{
+    color: #9a9a9a;
+    font-weight: 500;
+    line-height: 1.6;
+    margin-right: 7rem;
+}
+/* About Section End */
