@@ -29,8 +29,13 @@ a{
     border: 1px solid #fff;
     cursor: pointer;
 }
-.btn-primary:hover{
+.btn-primary:hover , .btn-secondary:hover{
     background-color:#e4b95b ;
+}
+.btn-secondary{
+    color:white ;
+    background-color: #383848;
+    margin-top: 2rem;
 }
 /* header start */
 header{
@@ -93,7 +98,7 @@ header *{
 /*header end */
 
 /* About Section Start */
-#About{
+#About , #menu{
     display: flex;
     height: 80vh;
     align-items: center;
@@ -103,7 +108,7 @@ header *{
 .container{
     max-width: 1100px;
     margin: auto;
-    margin-top: 70px;
+    margin-top: 50px;
 }
 #About .title{
     text-align: center;
@@ -133,3 +138,121 @@ header *{
     margin-right: 7rem;
 }
 /* About Section End */
+
+/* Offers Section Start */
+.offers{
+    background:  url(images/offer-background.jpg) center center/cover fixed;
+    margin-top: 100px;
+    height: 90vh;
+}
+#Menu .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.container .title{
+    color: white;
+    margin-bottom: 45px;
+    text-align: center;
+}
+.container .title h2{
+    color: #e4b95b;
+    font-size: 2.2rem;
+    font-weight: 800;
+}
+.offers-content{
+    display: flex;
+    text-align: center;
+    color: white;
+    justify-content: space-around;
+}
+.offers-text h3{
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+.offers-text p{
+    text-align: 1.6;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+.offers-text p del{
+    font-size: 0.8rem;
+}
+
+.offers-content div .offer-img{
+    width: 200px;
+    margin-bottom: 8px;
+}
+/* Offers Section End */
+
+/* Menu Section Start */
+#Menu{
+    height: 185vh;
+    display: flex;
+    width: 100%;
+}
+.menu-items{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#Menu .container .title h2{
+    color: #383848;
+}
+#Menu .container .title p{
+    color: #9a9a9a;
+    margin-top: 12px;
+}
+.item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 40px;
+}
+.gallery-img{
+    width: 80px;
+    margin-right: 20px;
+    border-radius: 50%;
+}
+.item .menu-info h3{
+    border-bottom: 1px dashed #c2bdbd;
+    padding-bottom: 10px;
+    position: relative;
+}
+.item .menu-info span{
+    position: absolute;
+    top: 0;
+    right: 0px;
+}
+.item .menu-info p{
+    margin-top: 10px;
+}
+.btn-therid{
+    background-color: #e4b95b;
+    color: white;
+}
+.btn-therid:hover{
+    background-color: #383848;
+}
+/* Menu Section End */
+
+/* daytime Section Start */
+#daytime{
+    background:  url(images/daytime_bg.jpeg) center center/cover fixed no-repeat;
+    text-align: center;
+    color: #fff;
+}
+#daytime .daytime-items{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 40vh;
+}
+#daytime .daytime-items h3{
+    font-size: 32px;
+    margin: 20px 0 10px;
+}
+#daytime .daytime-items p{
+    font-weight: 500;
+}
+/* daytime Section End */
